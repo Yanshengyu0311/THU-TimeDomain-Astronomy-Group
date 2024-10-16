@@ -16,7 +16,7 @@
 
 # 测光步骤简介
 ## 图像预处理
-图像预处理是用于修正和校正由CCD/CMOS传感器本身的特性引起的各种问题，如噪声、偏差和传感器不均匀性等。通过一系列校正步骤，提高图像数据的质量，以便进行后续的精确测光分析。
+图像预处理是用于修正和校正由CCD/CMOS传感器本身的特性引起的各种问题，如噪声、偏差和传感器不均匀性等。通过一系列校正步骤，提高图像数据的质量，以便进行后续的精确测光分析。以下前5项，基本都可以用iraf的`iraf.noao.imred.ccdred.ccdproc`修正。pyraf批量修正详见()[]。
 ### 减本底
 减本底（Bias Subtraction）是消除由传感器产生的本底信号。通过从原始图像中减去零曝光的偏置图像，可以消除由读取电子带来的基线偏置信号。
 暗流修正
@@ -92,22 +92,21 @@ WCS是用于观测图像与天空中物理坐标（通常为赤经和赤纬）�
 ## iraf(必学软件)
 [IRAF](https://iraf.net/)是天文学光学领域，数据处理和科学分析，最标准的，最科学，最全面的科学软件，是天文光学软件的旗舰和标杆。软件里面不仅仅包含了各种数据处理和科学分析的的功能，还拥有很全面使用指南。   
 
-其各个平台（Mac/Linux）软件安装教程，详见[]()。Contributer: 郭方舟&马啸然
+其各个平台（Mac/Linux）软件安装教程，详见[IRAF.docx](../Softwares/IRAF.docx)。Contributer: 郭方舟&马啸然
 
 ## DS9(必学软件)
-查看图像和分析图像的强大的软件。
+[DS9](https://sites.google.com/cfa.harvard.edu/saoimageds9)查看图像和分析图像的强大的软件。
 
 ## Sextractor(值得学习)
 [Sextractor](https://www.astromatic.net/software/sextractor/)是一个批量测光软件。
 
 ## WCS软件
-`WCS`(World Coordinate System)是映射
 莫军师兄的zrutyphot用的是Scamp，autophot用的Astromotry.net。看具体需求学习此类软件。
 一般平常用坐标转化，的可以用`astropy.wcs`(https://docs.astropy.org/en/latest/wcs/index.html)模块来计算。
 ### Astromotry.net
-[Astromotry.net](https://astrometry.net/)是一个强大的拟合WCS
+[Astromotry.net](https://astrometry.net/)是一个强大的拟合WCS，但是需要预先下载catalog，占用空间较大，但是相对方便。
 ### Scamp
-
+需要每次都下载对应天区的cataloge，不占用多余的储存空间，但是每次下载方便。
 
 ## 图像相减软件
 ### hotpants
@@ -121,15 +120,18 @@ WCS是用于观测图像与天空中物理坐标（通常为赤经和赤纬）�
 
 # 软件进阶
 # IRAF测光
-郑伟康老师的曾经写过IRAF的pipeline`zphot`。可能会涉及到郑伟康老师的版权问题，所以请在清华云盘内部链接下载`zphot`及其代码：
-
+郑伟康老师的曾经写过IRAF的pipeline`zphot`。可能会涉及到郑伟康老师的版权问题，所以请在清华云盘[内部链接](https://cloud.tsinghua.edu.cn/smart-link/4dfcaebb-08bb-4889-83f8-0fab10fe9be9/)下载`zphot`的指南及代码。**zphot.pdf**包含了孔径测光、PSF测光、iraf测光基本操作等内容，是非常好的中文基础学习资料。（不包括预处理，预处理等知识，预处理请参照(LJT光谱和测光处理_超新星版.pdf)[]预处理部分。）
 
 ### Autophot
 
 ### zrutyphot
+莫军硕士论文有介绍了TNT 80cm望远镜和一些数据处理方法。望远镜主要采用莫军搭建的zrutyphot，在登录组内服务器之后，终端输入  
 
-莫军师兄硕士论文
-黄芳师姐曾经对80厘米望远镜的数据介绍，[论文地址](https://iopscience.iop.org/article/10.1088/1674-4527/12/11/012/meta)。
+```bash
+phot
+```
+进入一个新的账户，然后参考zrutyphot用法，开始测光。莫军硕士论文以及zrutyphot用法，详见[内部链接](https://cloud.tsinghua.edu.cn/smart-link/4dfcaebb-08bb-4889-83f8-0fab10fe9be9/)   
+黄芳师姐也有曾经对80厘米望远镜的数据介绍，[论文地址](https://iopscience.iop.org/article/10.1088/1674-4527/12/11/012/meta)。
 
 
 # S-correction
@@ -137,4 +139,3 @@ WCS是用于观测图像与天空中物理坐标（通常为赤经和赤纬）�
 [SVO](http://svo2.cab.inta-csic.es/) Filter Profile Service是一个包含了各种望远镜及其仪器滤光片的信息网站,我们可以通过这个数据，下载滤光片信息。另外，SVO可以通过python中astroquery直接获取信息，比直接从网站获取更方便快捷。[pyphot](https://mfouesneau.github.io/pyphot/)是一个强大的卷积滤光片透过率和光谱软件，两个工具配合好，可以玩转多波段测光数据。
 
 ## S-correction实例
-
