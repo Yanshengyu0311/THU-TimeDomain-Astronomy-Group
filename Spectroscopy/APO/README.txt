@@ -1,0 +1,1 @@
+这里面pipAPO1.cl就是处理blue部分fits图像的上部处理脚本, pipAPO1_r.cl是处理red部分fits图像的上部处理, 其实主要就是多了一个bad pixel的修复, 下部处理不管是red还是blue都是用pipAPO2.cl这个脚本, 标准星的文件在standard这个文件夹下面去找, 还有就是大气消光文件用的是apoextinct.dat这个文件, 别的文件其实都是你在读懂pipeline怎么运行的时候, 他需要的一些文件, 包括让你提供坏的像素点的像素坐标什么的文件, 另外还有一个tai2jd.py, writejd.cl这是对最后的生成的光谱fits文件的头部信息里面时间的改正, 你可以不做等到使用光谱的人自己做.

@@ -1,0 +1,23 @@
+procedure pip()
+
+begin
+print("All standard star name:")
+print("Zet17Cas feige98LJT      hz44         hr9087    ltt9491  grw70d5824")
+print("wolf485  feige98         hz43         hr8634    ltt9239  gd71")
+print("wolf1346 feige92         hz43         hr7950    ltt7987  gd71")
+print("SP2341   feige67         hz4          hr7596    ltt745   gd50")
+print("SP2032   feige66         hz4          hr718     ltt7379  gd248")
+print("sa95_42  feige56         hz21         hr5501    ltt6248  gd153")
+print("s108     feige34         hz2          hr4963    ltt4816  gd108")
+print("rvs404   feige34         hz15LJT      hr4468    ltt4364  g9348")
+print("rvf404   feige25         hz15         hr3454    ltt3864  g93_48")
+print("refYZN   feige15_LJT     bd75d325     hr3454    ltt3218  g60_54")
+print("RefYZ    feige15         bd40d4032    hr1544    ltt2415  g24_9")
+print("Ref_YZN  feige110_lowres bd33d2642    cd32d9927 ltt1788  g193_74")
+print("ngd71    feige110        bd28d4211    cd32d9927 ltt1020  g191b2b")
+print("ngc7293  feige110        bd25d4655    cd_32d241 pg1708   g163d51")
+print("l1512    feige11         bd25d3941    hd93521   pg1708   g163_51")
+print("kopff27  eg274           bd17d4708    hd84937   pg1545   g158_100")
+print("hilt600  eg21            bd08d2015LJT hd19445   PG0823   g138_31")
+print("hilt102  fagk_81d266_005 bd08d2015    he3")
+end
