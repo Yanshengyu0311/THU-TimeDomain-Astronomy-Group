@@ -21,7 +21,9 @@ Well come to the Tsinghua University TimeDomain Astronomy Group, Here we will in
 我目前已经逐渐放弃了Windows+WSL组合。因为随着计算量变大，本地计算已经无法满足科研需求。所以我开始使用Visual Studio Code SSH远程连接服务器的方式进行日常coding。并且通过蒲公英[蒲公英](https://pgy.oray.com/)建立私域VPN，避免了本地电脑计算机运较慢等问题。
 
 ## IRAF
-[IRAF](https://iraf.net/)是我们天文学光学领域，数据处理和科学分析，最标准的，最科学，最全面的科学软件，是天文光学软件的旗舰和标杆。软件里面不仅仅包含了各种数据处理和科学分析的的功能，还拥有很全面使用指南。
+[IRAF](https://iraf.net/)是天文学光学领域，数据处理和科学分析，最标准的，最科学，最全面的科学软件，是天文光学软件的旗舰和标杆。软件里面不仅仅包含了各种数据处理和科学分析的的功能，还拥有很全面使用指南。后面发展出来了python版本[pyraf](https://iraf-community.github.io/pyraf.html)。但是由于pyraf本身是基于python 2.0的开发的，所以也有越来越多的软件开始替代iraf和pyraf。但是由于其专业性，还是天文学入门的必学软件之一。\n
+
+其各个平台（Mac/Linux）软件安装教程，详见[]()。Contributer: 郭方舟&马啸然
 
 ## DS9
 [DS9](https://sites.google.com/cfa.harvard.edu/saoimageds9)作为最强大的天文图像查看软件，可以和天文学软件很多兼容。里面有很多分析工具，可以对图像进行初的数值步分析。
