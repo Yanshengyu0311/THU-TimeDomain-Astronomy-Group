@@ -36,4 +36,4 @@ Well come to the Tsinghua University TimeDomain Astronomy Group, Here we will in
 [emcee](https://emcee.readthedocs.io/en/stable/)是mcmc最常见的采样估计参数的方法之一。我集成了emcee的，写成了一个类似scipy curve_fit的包，让拟合更方便。详见[]()
 
 ### SVO+pyphot
-[SVO](http://svo2.cab.inta-csic.es/)Filter Profile Service是一个包含了各种望远镜及其仪器滤光片的信息网站,我们可以通过这个数据，下载滤光片信息。另外，SVO可以通过python中astroquery直接获取信息，比直接从网站获取更方便快捷。[pyphot](https://mfouesneau.github.io/pyphot/)是一个强大的卷积滤光片透过率和光谱软件，两个工具配合好，可以玩转多波段测光数据。
+[SVO](http://svo2.cab.inta-csic.es/) Filter Profile Service是一个包含了各种望远镜及其仪器滤光片的信息网站,我们可以通过这个数据，下载滤光片信息。另外，SVO可以通过python中astroquery直接获取信息，比直接从网站获取更方便快捷。[pyphot](https://mfouesneau.github.io/pyphot/)是一个强大的卷积滤光片透过率和光谱软件，两个工具配合好，可以玩转多波段测光数据。
