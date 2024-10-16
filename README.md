@@ -1,5 +1,5 @@
 # Wellcome to the THU TimeDomain Astronomy Group
-Well come to the Tsinghua University TimeDomain Astronomy Group, Here we will introduce some about the Astrnomical Data Reduction in Optical!
+Welcome to the Tsinghua University Time-Domain Astronomy Group. Here, we will introduce some about astronomical data reduction in the optical domain!  
 欢迎各位同学补充和修正内容！让我们组的观测资源和代码资源整理的更加有条理！
 
 # 数据处理和科学软件指南
