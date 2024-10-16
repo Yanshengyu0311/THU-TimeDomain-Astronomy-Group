@@ -16,7 +16,7 @@
 
 # 测光步骤简介
 ## 图像预处理
-图像预处理是用于修正和校正由CCD/CMOS传感器本身的特性引起的各种问题，如噪声、偏差和传感器不均匀性等。通过一系列校正步骤，提高图像数据的质量，以便进行后续的精确测光分析。以下前5项，基本都可以用iraf的`iraf.noao.imred.ccdred.ccdproc`修正。pyraf批量修正详见()[]。
+图像预处理是用于修正和校正由CCD/CMOS传感器本身的特性引起的各种问题，如噪声、偏差和传感器不均匀性等。通过一系列校正步骤，提高图像数据的质量，以便进行后续的精确测光分析。以下前5项，基本都可以用iraf的`iraf.noao.imred.ccdred.ccdproc`修正。iraf/pyraf预处理指南详见[张居甲老师文档](../Spectroscopy/LTJ/LJT光谱和测光处理_超新星版.pdf)。pyraf批量修正详见()[]。
 ### 减本底
 减本底（Bias Subtraction）是消除由传感器产生的本底信号。通过从原始图像中减去零曝光的偏置图像，可以消除由读取电子带来的基线偏置信号。
 暗流修正
@@ -47,6 +47,20 @@ WCS是用于观测图像与天空中物理坐标（通常为赤经和赤纬）�
 通过这些WCS参数，天文学家可以将图像中的天体位置转换成标准天球坐标，方便后续的科学分析和跨图像数据的比对。
 
 较差测光（Differential Photometry）是一种相对测光方法，通过比较目标天体与参考星的亮度来测量其变化。这种方法可以减少由于大气条件变化、仪器不稳定性等因素对测光结果的影响，从而更准确地测量目标天体的相对亮度变化。
+
+## 图像相减
+
+## 图像相减
+
+在测量超新星和河外暂现源的亮度时，由于这些天体通常被埋在星系背景中，因此通过图像相减技术，可以更准确地分离出目标天体的亮度。图像相减是一种用于从背景星系中提取暂现源的有效方法。
+
+图像相减的操作一般包括以下步骤：
+1. 在目标天体完全消失的情况下拍摄模板图像。这张图像通常在天气良好、观测条件理想时获取，以确保高质量的背景图像。
+2. 通过将目标图像与模板图像进行像素级别的差分处理，得出仅包含超新星或暂现源的亮度差异图像。
+
+在紧急情况下，如果无法等待到理想的观测条件，可以借助大型图像巡天项目的公开数据来合成模板图像。例如，以下是一些常用图像巡天项目的获取链接：
+- **SDSS（Sloan Digital Sky Survey）**：[SDSS数据获取](https://www.sdss.org/dr12/data_access/)
+- **Pan-STARRS**：[Pan-STARRS数据获取](https://outerspace.stsci.edu/display/PANSTARRS)
 
 ## 较差测光步骤
 
@@ -88,7 +102,7 @@ WCS是用于观测图像与天空中物理坐标（通常为赤经和赤纬）�
 通过颜色改正，可以消除由观测条件和仪器特性引起的系统性误差，使最终的测光数据更准确，反映天体的真实亮度分布和颜色特性。这对于精确测量恒星的温度、化学成分和距离等特性具有重要作用。
 
 # 基础软件
-首先介绍几个常见的光学测光需要用到的基础软件
+首先介绍几个常见的光学测光需要用到的基础软件。**每一个软件都有其教学文档，由于软件版本不断更新，所以我们只需要Google一下（不要百度）就可以获得最新教学文档。我就不在这个git上传了**
 ## iraf(必学软件)
 [IRAF](https://iraf.net/)是天文学光学领域，数据处理和科学分析，最标准的，最科学，最全面的科学软件，是天文光学软件的旗舰和标杆。软件里面不仅仅包含了各种数据处理和科学分析的的功能，还拥有很全面使用指南。   
 
@@ -109,13 +123,21 @@ WCS是用于观测图像与天空中物理坐标（通常为赤经和赤纬）�
 需要每次都下载对应天区的cataloge，不占用多余的储存空间，但是每次下载方便。
 
 ## 图像相减软件
+详见`测光步骤简介/图像相减`部分。
 ### hotpants
+[hotpants](https://github.com/acbecker/hotpants)是最常见的(zrutyphot和autophot都在用)图像相减软件。用法详见其[参数](https://github.com/acbecker/hotpants?tab=readme-ov-file#hotpants)。
 ### zogy
-[ZOGY](http://ui.adsabs.harvard.edu/abs/2021ascl.soft05010V/abstract)
+[ZOGY](http://ui.adsabs.harvard.edu/abs/2021ascl.soft05010V/abstract)文献   
+[ZOGY](https://github.com/pmvreeswijk/ZOGY)python版本代码
+听说ZOGY这个方法比hotpants的方法更先进。
 
 ## 其他软件
-### Swarp
+
+### Swarp & reproject
+[Swarp](https://www.astromatic.net/software/swarp/)和[reproject](https://reproject.readthedocs.io/en/stable/index.html)都是一个用来旋转投影（重采样）天文图像的软件。Swarp在shell终端使用命令行更方便，reproject在python中更方便调用。
+
 ### missfit
+[MissFITS](https://www.astromatic.net/software/missfits/)是整理fits文件的一个软件
 
 
 # 软件进阶
@@ -123,6 +145,10 @@ WCS是用于观测图像与天空中物理坐标（通常为赤经和赤纬）�
 郑伟康老师的曾经写过IRAF的pipeline`zphot`。可能会涉及到郑伟康老师的版权问题，所以请在清华云盘[内部链接](https://cloud.tsinghua.edu.cn/smart-link/4dfcaebb-08bb-4889-83f8-0fab10fe9be9/)下载`zphot`的指南及代码。**zphot.pdf**包含了孔径测光、PSF测光、iraf测光基本操作等内容，是非常好的中文基础学习资料。（不包括预处理，预处理等知识，预处理请参照(LJT光谱和测光处理_超新星版.pdf)[]预处理部分。）
 
 ### Autophot
+[Autophot](https://github.com/Astro-Sean/autophot)软件链接。使用需引用[文章](    
+https://doi.org/10.1051/0004-6361/202243067)。      
+Autophot最大的优势在于可以高效读取很多望远镜的头文件信息。他把各种望远镜的header信息总结在yaml文件中。所以我将我用过的望远镜数据的头文件信息上传在[telescope.yaml](./autophot/telescope.yaml)中，大家可下载使用。  
+另外autophot的使用实例，用若干个jupyter总结。开始用的时候还算方便，我后面利用autophot，总结了一套更方便使用的脚本,极大提高了效率。详见[autophot](./autophot/)。建议大家在使用jupyter熟练之后，再使用[Autophot.py](./autophot/Autophot.py)脚本。
 
 ### zrutyphot
 莫军硕士论文有介绍了TNT 80cm望远镜和一些数据处理方法。望远镜主要采用莫军搭建的zrutyphot，在登录组内服务器之后，终端输入  
