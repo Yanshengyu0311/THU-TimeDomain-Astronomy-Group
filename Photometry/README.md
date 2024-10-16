@@ -102,17 +102,21 @@ WCS是用于观测图像与天空中物理坐标（通常为赤经和赤纬）�
 通过颜色改正，可以消除由观测条件和仪器特性引起的系统性误差，使最终的测光数据更准确，反映天体的真实亮度分布和颜色特性。这对于精确测量恒星的温度、化学成分和距离等特性具有重要作用。
 
 # 基础软件
-首先介绍几个常见的光学测光需要用到的基础软件。**每一个软件都有其教学文档，由于软件版本不断更新，所以我们只需要Google一下（不要百度）就可以获得最新教学文档。我就不在这个git上传了**
+首先介绍几个常见的光学测光需要用到的基础软件。**每一个软件都有其教学文档，由于软件版本不断更新，所以我们只需要Google一下（不要百度）就可以获得最新教学文档。我就不在这个仓库上传了**
 ## iraf(必学软件)
 [IRAF](https://iraf.net/)是天文学光学领域，数据处理和科学分析，最标准的，最科学，最全面的科学软件，是天文光学软件的旗舰和标杆。软件里面不仅仅包含了各种数据处理和科学分析的的功能，还拥有很全面使用指南。   
 
 其各个平台（Mac/Linux）软件安装教程，详见[IRAF.docx](../Softwares/IRAF.docx)。Contributer: 郭方舟&马啸然
 
 ## DS9(必学软件)
-[DS9](https://sites.google.com/cfa.harvard.edu/saoimageds9)查看图像和分析图像的强大的软件。
+[DS9](https://sites.google.com/cfa.harvard.edu/saoimageds9)查看图像和分析图像的强大的软件。安装教程在安装iraf（anaconda/env/iraf27/）的时候会一起安装。
 
 ## Sextractor(值得学习)
-[Sextractor](https://www.astromatic.net/software/sextractor/)是一个批量测光软件。
+[Sextractor](https://www.astromatic.net/software/sextractor/)是一个批量测光软件（链接里面有使用教程，请自行下载）。可以快速对一整个图像中全部的亮源进行批量测光，并获得其位置、亮度等信息。
+
+
+## Dolphot(HST专用测光软件)
+[Dolphot](http://americano.dolphinsim.com/dolphot/)地址。这个测光原理貌似和Sextractor类似，都是批量测光。这个一般不用学，需要的时候学一下。
 
 ## WCS软件
 莫军师兄的zrutyphot用的是Scamp，autophot用的Astromotry.net。看具体需求学习此类软件。
@@ -149,6 +153,11 @@ WCS是用于观测图像与天空中物理坐标（通常为赤经和赤纬）�
 https://doi.org/10.1051/0004-6361/202243067)。      
 Autophot最大的优势在于可以高效读取很多望远镜的头文件信息。他把各种望远镜的header信息总结在yaml文件中。所以我将我用过的望远镜数据的头文件信息上传在[telescope.yaml](./autophot/telescope.yaml)中，大家可下载使用。  
 另外autophot的使用实例，用若干个jupyter总结。开始用的时候还算方便，我后面利用autophot，总结了一套更方便使用的脚本,极大提高了效率。详见[autophot](./autophot/)。建议大家在使用jupyter熟练之后，再使用[Autophot.py](./autophot/Autophot.py)脚本。
+
+```bash
+Autophot.py -h
+```
+查看帮助指南。
 
 ### zrutyphot
 莫军硕士论文有介绍了TNT 80cm望远镜和一些数据处理方法。望远镜主要采用莫军搭建的zrutyphot，在登录组内服务器之后，终端输入  

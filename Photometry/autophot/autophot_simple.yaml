@@ -1,0 +1,22 @@
+catalog:
+  use_catalog: apass
+fits_dir: /home/ysy/Script/Tools/
+fitting:
+  remove_bkg_local: true
+  remove_bkg_surface: false
+limiting_magnitude:
+  lmag_check_SNR: 5
+photometry:
+  ap_size: 1.7
+  r_in_size: 2
+  r_out_size: 3
+target_dec: 58.503436
+target_ra: 112.043986
+template_subtraction:
+  do_ap_on_sub: true
+  do_subtraction: true
+  hotpants_exe_loc: /usr/local/bin/hotpants
+  prepare_templates: true
+wcs:
+  solve_field_exe_loc: /usr/local/astrometry/bin/solve-field
+wdir: /home/ysy/Script/Tools/

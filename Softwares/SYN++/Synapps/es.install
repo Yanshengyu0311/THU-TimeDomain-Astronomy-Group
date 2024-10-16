@@ -1,0 +1,33 @@
+#cfitsio
+./configure --prefix=/usr/local
+make
+make install
+
+#openmpi
+./configure --prefix=/usr/local
+make -j 4 all
+make install
+ldconfig
+
+#appspack
+./configure
+make
+make install
+
+#es
+./configure
+
+vi src/synapps/ES_Synapps_Config.cc
+#line 252->: done.insert( (int) config[ "ions" ][ i ] );
+
+make
+make check
+make install
+
+#es-data
+cp es-data.tar.gz /usr/local/share/es/
+cd /usr/local/share/es
+tar zxvf es-data.tar.gz
+mv es-data/lines .
+mv es-data/refs.dat .
+

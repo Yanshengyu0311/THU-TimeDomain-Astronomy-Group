@@ -1,0 +1,1074 @@
+0m4-14:
+  INSTRUME:
+    kb81:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_tfn0m414
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+  location:
+    alt: 2030
+    lat: 30.671389
+    lon: -104.0225
+    name: McDonald Observatory
+107ph:
+  INSTRUME:
+    ZWO_ASI071MC-Cool:
+      AIRMASS: AIRMASS
+      B: B
+      G: V
+      GAIN: EGAIN
+      Name: sharpstar107ph
+      RDNOISE: GAIN
+      V: V
+      filter_key_0: FILTER
+      g: g
+      i: i
+      pixel_scale: 1.399
+      r: r
+      z: z
+  location:
+    alt: 950
+    lat: 43.5
+    lon: 88.5
+    name: Xinjiang Gaoyazi Observatory
+1M-WideField:
+  INSTRUME:
+    nowt:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      I: I
+      Name: nowt
+      R: R
+      RDNOISE: REDNOISE
+      V: V
+      filter_key_0: FILTER
+      pixel_scale: 1.125
+  location:
+    alt: 2080
+    lat: 43.5
+    lon: 87.5
+    name: Nanshan
+1m0-01:
+  INSTRUME:
+    fa11:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_tfn1m01
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+  location:
+    alt: 2030
+    lat: 30.671389
+    lon: -104.0225
+    name: McDonald Observatory
+1m0-03:
+  INSTRUME:
+    fa19:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_coj1m03
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+  location:
+    alt: 2030
+    lat: 30.671389
+    lon: -104.0225
+    name: McDonald Observatory
+1m0-04:
+  INSTRUME:
+    fa03:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_lsc1m04
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+  location:
+    alt: 2030
+    lat: 30.671389
+    lon: -104.0225
+    name: McDonald Observatory
+1m0-05:
+  INSTRUME:
+    fa15:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_lsc1m05
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+  location:
+    alt: 2030
+    lat: 30.671389
+    lon: -104.0225
+    name: McDonald Observatory
+1m0-06:
+  INSTRUME:
+    fa07:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_ELP1m06
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+  location:
+    alt: 2030
+    lat: 30.671389
+    lon: -104.0225
+    name: McDonald Observatory
+1m0-08:
+  INSTRUME:
+    fa05:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_ELP1m08
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+  location:
+    alt: 2030
+    lat: 30.671389
+    lon: -104.0225
+    name: McDonald Observatory
+1m0-09:
+  INSTRUME:
+    fa04:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_lsc1m09
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+  location:
+    alt: 2030
+    lat: 30.671389
+    lon: -104.0225
+    name: McDonald Observatory
+1m0-10:
+  INSTRUME:
+    fa14:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_cpt1m10
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+    fa16:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_cpt1m10
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+  location:
+    alt: 2030
+    lat: 30.671389
+    lon: -104.0225
+    name: McDonald Observatory
+1m0-11:
+  INSTRUME:
+    fa12:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_coj1m11
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+  location:
+    alt: 2030
+    lat: 30.671389
+    lon: -104.0225
+    name: McDonald Observatory
+1m0-12:
+  INSTRUME:
+    fa06:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_cpt1m12
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+  location:
+    alt: 2030
+    lat: 30.671389
+    lon: -104.0225
+    name: McDonald Observatory
+1m0-13:
+  INSTRUME:
+    fa01:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_cpt1m13
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+  location:
+    alt: 2030
+    lat: 30.671389
+    lon: -104.0225
+    name: McDonald Observatory
+1m0-14:
+  INSTRUME:
+    fa20:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_tfn1m14
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+  location:
+    alt: 2030
+    lat: 30.671389
+    lon: -104.0225
+    name: McDonald Observatory
+2.5m_wide_angle_optical_telescope:
+  INSTRUME:
+    SDSS:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: sdss
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.3960059579538889
+      rp: r
+      up: u
+  location:
+    alt: 2788
+    lat: 32
+    lon: 105
+    name: APO
+2m0-01:
+  INSTRUME:
+    ep02:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_tfn0m414
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+    ep03:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_tfn0m414
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+    ep04:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_tfn0m414
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+    ep05:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: LCO_tfn0m414
+      RDNOISE: RDNOISE
+      U: U
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.039
+            m_err: 0.001
+        V:
+          B-V:
+            m: -0.005
+            m_err: 0.001
+        g:
+          g-r:
+            m: 0.114
+            m_err: 0.01
+        i:
+          r-i:
+            m: 0.024
+            m_err: 0.01
+        r:
+          r-i:
+            m: -0.004
+            m_err: 0.01
+      filter_key_0: FILTER
+      gp: g
+      ip: i
+      pixel_scale: 0.39
+      rp: r
+      zs: z
+  location:
+    alt: 2030
+    lat: 30.671389
+    lon: -104.0225
+    name: McDonald Observatory
+2m4-01:
+  INSTRUME:
+    yf01:
+      AIRMASS: AIRMASS
+      GAIN: GAIN
+      JB: B
+      JI: I
+      JR: R
+      JV: V
+      Name: LJ2m4
+      RDNOISE: RDNOISE
+      filter_key_0: FILTER3
+      open*open*sdssr*open*open*mirror_out*lamp_off: r
+      open*sdssi*open*open*open*mirror_out*lamp_off: i
+      pixel_scale: 0.286
+      sdssg: g
+      sdssi: i
+      sdssr: r
+  location:
+    alt: 3193
+    lat: 26.7
+    lon: 100.02
+    name: Lijiang Observatory
+ACP->Driver for telescope connected through TheSky:
+  INSTRUME:
+    FLI:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: PSP+BIN2
+      RDNOISE: RDNOISE
+      V: V
+      filter_key_0: FILTER
+      g2: g
+      i2: i
+      pixel_scale: 1.265675947144788
+      r2: r
+      z2: z
+    QHYCCD_QHY11S:
+      AIRMASS: AIRMASS
+      CLAER: clear
+      GAIN: EGAIN
+      Name: N89
+      RDNOISE: RDNOISE
+      filter_key_0: FILTER
+      pixel_scale: 1.81256375019744
+      r: r
+  location:
+    alt: 2080
+    lat: 43.5
+    lon: 87.5
+    name: Nanshan
+CA-2.2:
+  INSTRUME:
+    CAFOS 2.2:
+      AIRMASS: AIRMASS
+      FILT- 6: g
+      FILT- 7: r
+      FILT- 8: i
+      GAIN: CCDGAIN
+      Name: caha2.2
+      RDNOISE: RDNOISE
+      filter_key_0: INSFLID
+      pixel_scale: 0.526211463649
+  location:
+    alt: 2168
+    lat: 37.2
+    lon: -2.5
+    name: CAHA
+GTC:
+  INSTRUME:
+    OSIRIS:
+      AIRMASS: AIRMASS
+      GAIN: GAIN
+      Name: GTC_OSIRIS
+      RDNOISE: RDNOISE
+      Sloan_r: r
+      filter_key_0: FILTER2
+      pixel_scale: 0.254
+  location:
+    alt: 2267
+    lat: 28.5
+    lon: 18.0
+    name: LaPalma
+Keck I:
+  INSTRUME:
+    LRIS:
+      AIRMASS: AIRMASS
+      G: g
+      GAIN: GAIN
+      I: i
+      Name: Keck_LRIS
+      R: r
+      filter_key_0: FILTER
+      i: i
+      pixel_scale: 0.134999993315
+    LRISBLUE:
+      AIRMASS: AIRMASS
+      G: g
+      GAIN: GAIN
+      I: I
+      Name: Keck_LRIS_blue
+      R: R
+      filter_key_0: FILTER
+      pixel_scale: 0.135699987004
+  location:
+    alt: 4145
+    lat: 19.8263
+    lon: -155.47441
+    name: MaunaKeaObservatories
+PS1:
+  INSTRUME:
+    GPC1:
+      AIRMASS: AIRMASS
+      GAIN: GAIN
+      Name: PS1
+      RDNOISE: RDNOISE
+      filter_key_0: FILTER
+      g: g
+      i: i
+      pixel_scale: 0.25
+      r: r
+      y: y
+      z: z
+  location:
+    alt: 3053
+    lat: 20.5
+    lon: 156.0
+    name: Haleakala Observatories
+SDSS:
+  INSTRUME:
+    sdss:
+      AIRMASS: AIRMASS
+      GAIN: GAIN
+      Name: SDSS_image
+      RDNOISE: RDNOISE
+      filter_key_0: FILTER
+      i: i
+      pixel_scale: 0.39596952081
+  location:
+    alt: 2788
+    lat: 32.7805
+    lon: -105.82058
+    name: APO
+SLT:
+  INSTRUME:
+    Andor CCD/EMCCD (SDK2):
+      AIRMASS: AIRMASS
+      GAIN: GAIN
+      Name: SLT
+      RDNOISE: RDNOISE
+      filter_key_0: FILTER
+      gp_Astrodon_2018: g
+      ip_Astrodon_2018: i
+      pixel_scale: 0.760887279054
+      rp_Astrodon_2018: r
+      up_Astrodon_2018: u
+      zp_Astrodon_2018: z
+  location:
+    alt: 2862
+    lat: 23.469447
+    lon: 120.872624
+    name: Lulin Observatory
+TNT80cm:
+  INSTRUME:
+    XL80:
+      AIRMASS: AIRMASS
+      B: B
+      GAIN: GAIN
+      Name: tnt80cm
+      RDNOISE: RDNOISE
+      V: V
+      color_index:
+        B:
+          B-V:
+            m: -0.217
+iTelescope 19:
+  INSTRUME:
+    FLI:
+      AIRMASS: AIRMASS
+      B: B
+      Blue: B
+      GAIN: GAIN
+      Green: g
+      Ha: r
+      I: I
+      Luminance: r
+      Name: T19
+      R: R
+      RDNOISE: RDNOISE
+      Red: r
+      V: V
+      filter_key_0: FILTER
+      pixel_scale: 0.643021254376
+  location:
+    alt: 1118
+    lat: -31.273361
+    lon: -149.06
+    name: Siding_Spring_Observatory
+iTelescope 31:
+  INSTRUME:
+    FLI:
+      AIRMASS: AIRMASS
+      B: B
+      Blue: B
+      GAIN: GAIN
+      Green: g
+      Ha: r
+      I: I
+      Luminance: r
+      Name: T31
+      R: R
+      RDNOISE: RDNOISE
+      Red: r
+      V: V
+      filter_key_0: FILTER
+      pixel_scale: 1.09316927408
+  location:
+    alt: 1118
+    lat: -31.273361
+    lon: -149.06
+    name: Siding_Spring_Observatory
+iTelescope 32:
+  INSTRUME:
+    Gx USB Imager:
+      AIRMASS: AIRMASS
+      B: B
+      Blue: B
+      GAIN: GAIN
+      Green: g
+      Ha: r
+      I: I
+      Luminance: r
+      Name: T32
+      R: R
+      RDNOISE: RDNOISE
+      Red: r
+      V: V
+      filter_key_0: FILTER
+      pixel_scale: 0.643021254376
+  location:
+    alt: 1118
+    lat: -31.273361
+    lon: -149.06
+    name: Siding_Spring_Observatory
+iTelescope 72:
+  INSTRUME:
+    FLI:
+      AIRMASS: AIRMASS
+      B: B
+      Blue: B
+      GAIN: GAIN
+      Green: g
+      Ha: r
+      I: I
+      Luminance: r
+      Name: T31
+      R: R
+      RDNOISE: RDNOISE
+      Red: r
+      U: u
+      V: V
+      filter_key_0: FILTER
+      pixel_scale: 1.09316927408
+    T72 FLI 16200:
+      AIRMASS: AIRMASS
+      B: B
+      Blue: B
+      GAIN: GAIN
+      Green: g
+      Ha: r
+      I: I
+      Luminance: r
+      Name: T31
+      R: R
+      RDNOISE: RDNOISE
+      Red: r
+      U: u
+      V: V
+      filter_key_0: FILTER
+      pixel_scale: 0.358649516866
+  location:
+    alt: 1118
+    lat: -31.273361
+    lon: -149.06
+    name: Siding_Spring_Observatory

@@ -1,0 +1,38 @@
+#-
+#- Need to document...
+#-
+---
+output :
+    min_wl      : 3200.0        # min. wavelength in AA
+    max_wl      : 9000.0       # max. wavelength in AA
+    wl_step     : 5.0           # wavelength spacing in AA
+grid :
+    bin_width   : 0.3           # opacity bin size in kkm/s
+    v_size      : 200           # size of line-forming region grid
+    v_outer_max : 30.0          # fastest ejecta velocity in kkm/s
+opacity :
+    line_dir    : /usr/local/share/es/lines     # path to atomic line data
+    ref_file    : /usr/local/share/es/refs.dat  # path to ref. line data
+    form        : exp           # parameterization (only exp for now)
+    v_ref       : 10.0          # reference velocity for parameterization
+    log_tau_min : -2.0          # opacity threshold
+source :
+    mu_size     : 20            # number of angles for source integration
+spectrum :
+    p_size      : 60            # number of phot. impact parameters for spectrum
+    flatten     : No            # divide out continuum or not
+setups :
+    -   a0      :  1.0          # constant term
+        a1      :  0.0          # linear warp term
+        a2      :  0.0          # quadratic warp term
+        v_phot  :  7.0          # velocity at photosphere (kkm/s)
+        v_outer :  30.0         # outer velocity of line forming region (kkm/s)
+        t_phot  :  9.074        # blackbody photosphere temperature (kK)
+        ions    :  [  200,  600,  800, 1000, 2001, 2001, 2601 ]   # ions (100*Z+I, I=0 is neutral)
+        active  :  [   No,   No,   No,   No,   No,   No,  Yes ]   # actually use the ion or not
+        log_tau :  [ -0.8, -0.8, -0.8, -0.8, -0.8, -0.8, -1.0 ]   # ref. line opacity at v_ref
+        v_min   :  [  7.0,  7.0,  7.0,  7.0,  7.0, 18.0,  7.0 ]   # lower cutoff (kkm/s)
+        v_max   :  [ 10.0, 12.0, 13.0, 13.0, 12.0, 25.0, 12.0 ]   # upper cutoff (kkm/s)
+        aux     :  [ 30.0, 30.0, 30.0, 30.0, 30.0, 30.0, 30.0 ]   # e-folding for exp form
+        temp    :  [ 10.0,  9.0, 10.0,  4.0, 10.0, 10.0,  5.0 ]   # Boltzmann exc. temp. (kK)
+

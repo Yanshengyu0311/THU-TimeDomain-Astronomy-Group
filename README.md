@@ -2,6 +2,9 @@
 Welcome to the Tsinghua University Time-Domain Astronomy Group. Here, we will introduce some about astronomical data reduction in the optical domain!  
 欢迎各位同学补充和修正内容！让我们组的观测资源和代码资源整理的更加有条理！
 
+# 时域天文观测计划以及观测经验
+郭方舟&马啸然在[./Observation/IRAF.docx](./Observation/IRAF.docx)总结了组里面如何制定兴隆2.16m望远镜的观测计划。但是我还是觉得远远不够，强烈呼吁大家在后面可以继续添加完善。
+
 # 数据处理和科学软件指南
 
 ## 光谱数据处理
@@ -16,14 +19,13 @@ Welcome to the Tsinghua University Time-Domain Astronomy Group. Here, we will in
 ## 操作系统以及网络配置
 作为初学者，如果你使用的是Windows操作系统，强烈建议建议使用Windows+[WSL](https://learn.microsoft.com/en-us/windows/wsl/install)组合，替代若干年前的，常见的Windows+Ubuntu双系统组合。Windows+WSL组合可以几乎完美的同时使用Windows和Linux系统的各个软件。而且免去了开双系统的麻烦，两个系统的文件也可以相互交互访问并修改。
 
-
 ### Windows进阶
 我目前已经逐渐放弃了Windows+WSL组合。因为随着计算量变大，本地计算已经无法满足科研需求。所以我开始使用Visual Studio Code SSH远程连接服务器的方式进行日常coding。并且通过蒲公英[蒲公英](https://pgy.oray.com/)建立私域VPN，避免了本地电脑计算机运较慢等问题。
 
 ## IRAF
 [IRAF](https://iraf.net/)是天文学光学领域，数据处理和科学分析，最标准的，最科学，最全面的科学软件，是天文光学软件的旗舰和标杆。软件里面不仅仅包含了各种数据处理和科学分析的的功能，还拥有很全面使用指南。后面发展出来了python版本[pyraf](https://iraf-community.github.io/pyraf.html)。但是由于pyraf本身是基于python 2.0的开发的，所以也有越来越多的软件开始替代iraf和pyraf。但是由于其专业性，还是天文学入门的必学软件之一。\n
 
-其各个平台（Mac/Linux）软件安装教程，详见[]()。Contributer: 郭方舟&马啸然
+其各个平台（Mac/Linux）软件安装教程，详见[IRAF.docx]()。Contributer: 郭方舟&马啸然
 
 ## DS9
 [DS9](https://sites.google.com/cfa.harvard.edu/saoimageds9)作为最强大的天文图像查看软件，可以和天文学软件很多兼容。里面有很多分析工具，可以对图像进行初的数值步分析。

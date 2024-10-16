@@ -1,0 +1,37 @@
+#-
+#- Need to document...
+#-
+---
+output :
+    min_wl      : 3700.0        # min. wavelength in AA
+    max_wl      : 10000.0       # max. wavelength in AA
+    wl_step     : 5.0           # wavelength spacing in AA
+grid :
+    bin_width   : 0.3           # opacity bin size in kkm/s
+    v_size      : 100           # size of line-forming region grid
+    v_outer_max : 50.0          # fastest ejecta velocity in kkm/s
+opacity :
+    line_dir     : /usr/local/share/es/lines/  # path to atomic line data
+    ref_file     : /home/ysy/data/Data_analysis/synapps/refs.dat # path to ref. line data
+    form        : exp           # parameterization (only exp for now)
+    v_ref       : 10.0          # reference velocity for parameterization
+    log_tau_min : -2.0          # opacity threshold
+source :
+    mu_size     : 10            # number of angles for source integration
+spectrum :
+    p_size      : 60            # number of phot. impact parameters for spectrum
+    flatten     : No            # divide out continuum or not
+setups :
+    -   a0      :  0.849
+        a1      :  -0.602
+        a2      :  1.200
+        v_phot  :  18.567
+        v_outer :  50.000
+        t_phot  :  7.027
+        ions    : [  601,  800,   1201,  1401,  1401,  1402,  1402,  1601,  2001,  2001,  2601,  2601, 2602 ]
+        active       : [  yes,  yes,   yes,   yes,   yes,   yes,   yes,   yes,   yes,   yes,   yes,   yes,   yes ]
+        log_tau : [ 1.913, 0.840, 2.177, 1.177, 1.863, 1.896, 0.213, 2.906, 1.881, 2.829, -0.518, 0.262, 0.621 ]
+        v_min   : [ 18.300, 20.371, 18.204, 18.185, 21.077, 18.185, 19.896, 18.185, 18.185, 23.917, 18.185, 31.450, 18.185 ]
+        v_max   : [ 30.000, 30.000, 50.000, 30.000, 50.000, 50.000, 48.000, 30.000, 50.000, 50.000, 30.000, 50.000, 50.000 ]
+        aux     : [ 1.151, 1.554, 1.772, 8.245, 2.764, 0.455, 3.614, 1.101, 5.795, 4.408, 1.208, 8.124, 2.922 ]
+        temp    : [ 10.462, 11.117, 5.450, 11.306, 11.306, 9.632, 9.632, 18.684, 8.044, 8.044, 5.000, 5.000, 13.060 ]
