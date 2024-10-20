@@ -37,4 +37,19 @@ data: [
 astropy.time.Time("2024-10-05 18:29:12",format="iso").mjd-(-14.5229128548)
 ```
 即为参考相位时间的MJD。其他所有的日期都用这个参考时间。
-- `整理数据` 在原网页
+- `整理数据` 在原网页中，适当选取内容，如下图
+`data:`之后：
+![alt text](image-7.png)
+分号之前：
+![alt text](image-6.png)
+整理成一个js的文件。
+然后用刘嘉联写的小程序[./read_LCO.py](./read_LCO.py)。修改文件名和参考时间。
+```python
+input_file = 'LCO.js'
+MJD0 = 60584.07425925927 + 19.1230947217
+```
+和输出文件名称，
+```python 
+data.to_csv('LCO.dat',index=False)
+```
+即可转化为可读性较强的数据文件。
