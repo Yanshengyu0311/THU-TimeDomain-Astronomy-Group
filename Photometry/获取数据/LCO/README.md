@@ -27,21 +27,23 @@ data: [
     [-12.591769455,18.222611255,0.0252185589538,"2024-10-07"]]}
 ```
 `label`中就是**COJ 1m**是望远镜名字，**ip**是滤光片名字。点击在网页右上角`Batch Download Data`，见下图。
-![alt text](image-2.png)
+![alt text](image-2.png)   
 出现以下界面：
-![alt text](image-3.png)
+![alt text](image-3.png)    
 红框中就是fits数据中的一些信息。这时候，任意选以上`COJ 1m ip`中一个测光点，发挥你的聪明智慧，找到对应的数据。
-![alt text](image-5.png)
-"2024-10-05 18:29:12"即为第一个`COJ 1m ip`观测数据的观测时间,对应的是-14.5229128548天之前拍摄的。我们用python
+
+![alt text](image-5.png)    
+
+里面"2024-10-05 18:29:12"即为第一个`COJ 1m ip`观测数据的观测时间,对应的是-14.5229128548天之前拍摄的。我们用python
 ```python
 astropy.time.Time("2024-10-05 18:29:12",format="iso").mjd-(-14.5229128548)
 ```
 即为参考相位时间的MJD。其他所有的日期都用这个参考时间。
 - `整理数据` 在原网页中，适当选取内容，如下图
 `data:`之后：
-![alt text](image-7.png)
+![alt text](image-7.png)  
 分号之前：
-![alt text](image-6.png)
+![alt text](image-6.png)   
 整理成一个js的文件。
 然后用刘嘉联写的小程序[./read_LCO.py](./read_LCO.py)。修改文件名和参考时间。
 ```python
