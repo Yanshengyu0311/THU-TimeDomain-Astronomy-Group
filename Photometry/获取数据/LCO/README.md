@@ -40,8 +40,8 @@ astropy.time.Time("2024-10-05 18:29:12",format="iso").mjd-(-14.5229128548)
 ```
 即为参考相位时间的MJD。其他所有的日期都用这个参考时间。
 - `整理数据` 在原网页中，适当选取内容，如下图
-`data:`之后：
-![alt text](image-7.png)  
+`val data:`之后：
+![alt text](image-4.png)
 分号之前：
 ![alt text](image-6.png)   
 整理成一个js的文件。
