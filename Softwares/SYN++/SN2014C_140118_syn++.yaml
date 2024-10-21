@@ -1,0 +1,33 @@
+output :
+    min_wl       : 3500.0
+    max_wl       : 9000.0
+    wl_step      : 5.0
+grid :
+    bin_width    : 0.3
+    v_size       : 100
+    v_outer_max  : 30.0
+opacity :
+    line_dir     : /usr/local/share/es/lines
+    ref_file     : /usr/local/share/es/refs.dat
+    form         : exp
+    v_ref        : 10.0
+    log_tau_min  : -2.0
+source :
+    mu_size      : 10
+spectrum :
+    p_size       : 60
+    flatten      : No
+setups :
+    -   a0       : 0.70  
+        a1       : 0.44  
+        a2       : -0.81 
+        v_phot   : 14.47 
+        v_outer  : 30.00 
+        t_phot   : 18.37 
+        ions     : [   100,    200,    800,   1401,   1201,   2001,   2601 ]
+        active   : [    Yes,    Yes,    Yes,    Yes,    Yes,    Yes,    Yes ]
+        log_tau  : [   0.62,   0.66,   0.97,   2.79,  -1.92,   1.55,   0.16 ]
+        v_min    : [   1.00,  10.69,  12.18,  14.41,   4.66,   7.79,   3.70 ]
+        v_max    : [  30.00,  22.00,  22.84,  15.77,  28.40,  30.00,  20.46 ]
+        aux      : [   1.83,   2.06,   2.11,   1.92,   9.92,   3.47,   9.33 ]
+        temp     : [  15.42,  14.38,  16.06,   5.43,  12.44,  20.00,   6.20 ]
