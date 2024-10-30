@@ -1,0 +1,123 @@
+2m4-01:
+  yf01:
+    bias_value: N/A
+    biassec: "[5:20,*]"
+    # dark_value: dark
+    date_key: DATE-OBS
+    date_key_type: isot
+    filter_key: FILTER3
+    #    fixpix: badpix
+    flat_value: Flat
+    gain: 0.33
+    layer: 0
+    object_key: OBJECT
+    rdnoise: 6.6
+    replace_key:
+      key:
+        key_1: CCDSEC
+      value:
+        val_1: '[1:2148,1:2200]'
+    sdssr: r
+    sdssi: i
+    trimsec: "[100:2000,200:2100]"
+
+TNT80cm:
+  XL80:
+    suffix: fit
+    pre_cmd: ["sethead bias* OBJ_NAME=bias"]
+    bias_value: bias 
+    date_key: DATE-OBS
+    date_key_type: isot
+    filter_key: FILTER
+    flat_value: flat
+    gain: 1.9
+    layer: 0
+    object_key: OBJ_NAME
+    rdnoise: 7.2
+    replace_key:
+      key:
+        key_1: SIMPLE
+      value:
+        val_1: "T"
+    g: g
+    r: r
+    i: i
+    V: V
+    B: B
+    I: I
+    R: R
+    trimsec: '[1:2000,1:2000]'
+
+
+1M-WideField:
+  nowt:
+    pre_cmd: ["sethead *.fits INSTRUME=nowt",
+              "sethead *.fits TELESCOP=1M-WideField",
+              "sethead *.fits GIAN=0.89",
+              "sethead *.fits REDNOISE=4",
+              "sethead *_I_*.fits FILTER=I",
+              "sethead *_R_*.fits FILTER=R",
+              "sethead *_V_*.fits FILTER=V",
+              "sethead *_B_*.fits FILTER=B",]
+    bias_value: BIAS
+    date_key: DATE-OBS
+    date_key_type: isot
+    filter_key: FILTER
+    flat_value: FLAT
+    gain: 0.89
+    layer: 0
+    object_key: OBJECT
+    rdnoise: 4
+    R: R
+    I: I
+    V: V
+    B: B
+    trimsec: '[1:4080,1:4130]'
+
+ACP->TheSky:
+  AndorTech:
+    filter_key: FILTER
+    B: B
+    R: R
+    I: I
+    U: U
+    V: V
+    date_key: DATE-OBS
+    bias_value: Bias    
+    flat_value: FLAT
+    object_key: OBJECT
+    date_key_type: isot
+    gain: 1
+    rdnoise: 10
+    layer: 0
+    
+
+    # pre_cmd: ["sethead *.fit OBJECT=Flat",]
+
+107ph:
+  ZWO_ASI071MC-Cool:
+    filter_key: FILTER
+    r: r
+    date_key: DATE-OBS
+    bias_value: bias
+    flat_value: FlatWizard
+    dark_value: Dark -10 300s
+    object_key: OBJECT
+    date_key_type: isot
+    gain: 2.2659437656402
+    rdnoise: 19
+    layer: 0
+
+littleblack:
+  ZWOASI2600MMPro:
+    filter_key: FILTER
+    L: V
+    date_key: DATE-OBS
+    bias_value: BIAS
+    flat_value: FLAT
+    dark_value: DARK
+    object_key: OBJECT
+    date_key_type: isot
+    gain: 1
+    rdnoise: 0.7
+    layer: 0
