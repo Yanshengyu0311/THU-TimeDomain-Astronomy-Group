@@ -11,10 +11,10 @@ setup(
     # "scipy>=1.5,<2.0",     # 版本介于1.5和2.0之间
     "numpy",
     "pandas",
-    "astropy"
+    "astropy",
     "optparse",
     "yaml",
-    "reproject"
+    "reproject",
     "pyraf"
     ],  # 如果有依赖库，可以在这里添加
 
