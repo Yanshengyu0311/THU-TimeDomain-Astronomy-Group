@@ -231,7 +231,10 @@ def cli():
                                    )
     
     Keys=telescope_Pre_yaml[telescop][instrume]
-
+    ObjectType={
+        Keys["bias_value"]:"bias",
+        Keys["flat_value"]:"flat",
+    }
 
 
 
@@ -311,7 +314,7 @@ def cli():
             "DarkCor"   :"",
             "FlatCor"   :"",
         }
-
+        if new_row["ObjectType"] in ObjectType:new_row["ObjectType"]=ObjectType[new_row["ObjectType"]]
         image_info.loc[len(image_info)] = new_row
 
 
@@ -338,7 +341,7 @@ def cli():
 
 
     
-    list_date =lambda x: Time(np.mean(x["MJD"].values),format="mjd").to_datetime().strftime("%Y%m%d")
+    list_date =lambda x: Time(np.nanmean(x["MJD"].values),format="mjd").to_datetime().strftime("%Y%m%d")
     file_layer=lambda x: [i+layer for i in x]
 
     # file_ZeroCor=lambda x: [ for f in x]
@@ -354,6 +357,7 @@ def cli():
             image_info.loc[i,"DarkCor"]=image_info.loc[i,"FitsName"].split("."+img_suffix)[0]+"_ZeroDarkCor.fits"
 
     from call_iraf import IRAF
+    os.chdir(CWD)
     iraf=IRAF(
                  Keys=Keys,
                  cwd=CWD,
@@ -378,6 +382,7 @@ def cli():
     flat_combine_output=None
             
     zero_combine_done=False
+
     for tt in image_info.loc[image_info["ObjectType"]=="science"].index:
         target_filter=image_info.loc[tt,"Filter"]
         target_mjd   =image_info.loc[tt,"MJD"]
@@ -395,12 +400,13 @@ def cli():
             for f in bias_used["FitsName"].values:print("%20s"%f)
             # print(bias_used[["FitsName","MJD","ZeroCor"]])
             # print(image_need_ZeroCor[["FitsName","MJD","ZeroCor"]])
-            
+            # print(np.mean(bias_used["MJD"].values))
             zero_combine_input ="zero.%s.list"  %list_date(bias_used)
             zero_combine_output="zero.%s.fits"  %list_date(bias_used)
             zero_correct_input ="ZeroCor_input.%s.list" %list_date(bias_used)
             zero_correct_output="ZeroCor_output.%s.list"%list_date(bias_used)
-            
+            print(os.path.abspath("./"))
+            print("aaaaaaaaaaa",file_layer(bias_used["FitsName"].values),zero_correct_input)
             write_list(file_layer(bias_used["FitsName"].values),
                        zero_combine_input,)
             write_list(file_layer(image_need_ZeroCor["FitsName"].values),

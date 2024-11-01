@@ -47,7 +47,23 @@ TNT80cm:
     I: I
     R: R
     trimsec: '[1:2000,1:2000]'
-
+TNOT:
+  Andor Tech:
+    filter_key: FILTER
+    pre_cmd: ["sethead flat*fits OBJECT=Flat",
+              'for file in *.fts; do mv "$file" "${file%.fts}.fits"; done']
+    gain: 1
+    rdnoise: 4
+    layer: 0
+    object_key: OBJECT
+    date_key: DATE-OBS
+    date_key_type: isot
+    bias_value: Bias
+    flat_value: Flat
+    suffix: fits
+    ip: i
+    rp: r
+    trimsec: '[1:2048,1:2048]'
 
 1M-WideField:
   nowt:

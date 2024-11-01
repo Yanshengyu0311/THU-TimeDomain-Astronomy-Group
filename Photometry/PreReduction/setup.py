@@ -6,16 +6,13 @@ setup(
     packages=find_packages(),
     python_requires=">=2.7, <3",
     install_requires=[
-    # "numpy>=1.20.0",       # 最低版本1.20.0，允许更高版本
-    # "pandas==1.3.3",       # 固定版本为1.3.3
-    # "scipy>=1.5,<2.0",     # 版本介于1.5和2.0之间
     "numpy",
     "pandas",
     "astropy"
-    "optparse",
+    # "optparse",
     "yaml",
-    "reproject"
-    "pyraf"
+    "reproject",
+    "pyraf",
     ],  # 如果有依赖库，可以在这里添加
 
     # 定义命令行脚本入口

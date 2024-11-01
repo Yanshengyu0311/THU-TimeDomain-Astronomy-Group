@@ -1,6 +1,6 @@
 # 简介
 这是一个图像预处理的脚本。通过调用pyraf，实现快速的图像预处理。不同望远镜的信息都集成在telescope_Pre.yaml里面。可以通过telescope_Pre.yaml中头文件的信息，对文件进行识别，分类。
-* python基本的依赖
+# python基本的依赖
 - **numpy** 
 - **pandas**
 - **astropy**
