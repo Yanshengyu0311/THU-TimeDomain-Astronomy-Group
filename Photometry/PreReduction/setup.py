@@ -5,12 +5,13 @@ setup(
     version="0.1",
     packages=find_packages(),
     python_requires=">=2.7, <3",
+    include_package_data=True,
     install_requires=[
     "numpy",
     "pandas",
     "astropy"
     # "optparse",
-    "yaml",
+    "pyyaml",
     "reproject",
     "pyraf",
     ],  # 如果有依赖库，可以在这里添加

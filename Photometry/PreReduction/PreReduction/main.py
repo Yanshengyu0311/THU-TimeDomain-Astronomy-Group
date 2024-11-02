@@ -231,13 +231,12 @@ def cli():
                                    )
     
     Keys=telescope_Pre_yaml[telescop][instrume]
-    ObjectType={
-        Keys["bias_value"]:"bias",
-        Keys["flat_value"]:"flat",
-    }
 
 
-
+    ObjectType={}
+    if "bias_value" in Keys:ObjectType[Keys["bias_value"]]="bias"
+    if "flat_value" in Keys:ObjectType[Keys["flat_value"]]="flat"
+    if "dark_value" in Keys:ObjectType[Keys["dark_value"]]="dark"
 
     if "pre_cmd"  in Keys: 
         for c in Keys["pre_cmd"]:os.system(c)
