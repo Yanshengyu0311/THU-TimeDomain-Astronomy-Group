@@ -9,10 +9,10 @@ setup(
     install_requires=[
     "numpy",
     "pandas",
-    "astropy"
+    "astropy",
     # "optparse",
     "pyyaml",
-    "reproject",
+    #"reproject",
     "pyraf",
     ],  # 如果有依赖库，可以在这里添加
 

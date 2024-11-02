@@ -14,7 +14,7 @@ import optparse
 import sys
 from astropy.io import fits
 from astropy.wcs import WCS
-from reproject import reproject_interp
+# from reproject import reproject_interp
 # 读取时间
 import pandas as pd
 import yaml
